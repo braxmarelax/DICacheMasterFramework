@@ -1,0 +1,23 @@
+PODS:
+  - Cache (5.1.0)
+  - Imaginary (4.0.0):
+    - Cache (~> 5.0)
+
+DEPENDENCIES:
+  - Imaginary (from `../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cache
+
+EXTERNAL SOURCES:
+  Imaginary:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Cache: 7737c595aae7d94c7c0feca2c887288624e3b07e
+  Imaginary: 441fc8390e20f99e2025cc40643acc037e84dd30
+
+PODFILE CHECKSUM: 804905a0cfc064a8a0388d223095e41774bcee31
+
+COCOAPODS: 1.5.3

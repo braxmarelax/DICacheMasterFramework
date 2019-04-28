@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" ~> 4.7
+github "Alamofire/AlamofireImage" ~> 3.1
+github "hyperoslo/Lightbox"
+github "suzuki-0000/SKPhotoBrowser"
+github "onevcat/Kingfisher" ~> 5.0
