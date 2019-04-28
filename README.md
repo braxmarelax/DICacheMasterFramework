@@ -27,3 +27,30 @@ add following line <code>github "braxmarelax/DICacheMasterFramework"</code> on y
  </br>Next, don't forget to drag and drop the DICacheMasterFramework.framework from ~/Path/To/Starter/Project/Cathage/⁨Build⁩/⁨iOS⁩ to your General->Linked Frameworks and Libraries then adding it on Build phase->Embed frameworks and Build phase->Link binary with Libraries. </br></br> 
 
 These are standart carthage integration steps.</br>
+
+What is completed :</br></br>
+Loading data from : http://pastebin.com/raw/wgkJgazE (and all links which return a json with the same structure and this link) and showing a slider image view to show the content(with <code>FileCacher.displayImageGrid(vc:UIViewController, API_URL:String)</code>);
+
+Images are cached efficiently(with <code>FileCacher.cacheImage(url:String!,uiImageView:UIImageView)</code>
+
+The cache have a configurable max capacity and should evict images not recently used (with method <code>FileCacher.initCache(memoryCacheSizeInMega:Int,imageNumberLimit:Int, expirationTimeInSecond:Int)</code>
+
+An image load can be cancelled (with <code>FileCacher.cancelDownload(uiImageView:UIImageView</code>)
+
+The same image may be requested by multiple sources simultaneously (even before it has loaded), and if one of the sources cancels the load, it should not affect the remaining requests;
+
+Multiple distinct resources may be requested in parallel;
+
+You can work under the assumption that the same URL will always return the same resource;
+
+The library should be easy to integrate into new iOS project / apps;
+
+You are supposed to build a solid structure and use the needed programming design patterns;
+
+Think that the list of item returned by the API can reach 100 items or even more. At a time, you should only load 10 items, and load more from the API when the user reach the end of the list;
+
+Usage of size classes is an advantage;
+
+Usage of cool animations and transitions is an advantage;
+
+Adding "pull to refresh" is an advantage.
