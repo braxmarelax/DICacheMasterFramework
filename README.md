@@ -37,20 +37,16 @@ The cache have a configurable max capacity and should evict images not recently 
 
 An image load can be cancelled (with <code>FileCacher.cancelDownload(uiImageView:UIImageView</code>)
 
-The same image may be requested by multiple sources simultaneously (even before it has loaded), and if one of the sources cancels the load, it should not affect the remaining requests;
+The same image can be requested by multiple sources simultaneously (even before it has loaded), and if one of the sources cancels the load, it should not affect the remaining requests;
 
-Multiple distinct resources may be requested in parallel;
+Multiple distinct resources can be requested in parallel;
 
-You can work under the assumption that the same URL will always return the same resource;
+The library should be easy to integrate into new iOS project / apps (Simply with standart carthage integration);
 
-The library should be easy to integrate into new iOS project / apps;
+Cool animations and transitions integrated;
 
-You are supposed to build a solid structure and use the needed programming design patterns;
+What should be done :
 
 Think that the list of item returned by the API can reach 100 items or even more. At a time, you should only load 10 items, and load more from the API when the user reach the end of the list;
 
-Usage of size classes is an advantage;
-
-Usage of cool animations and transitions is an advantage;
-
-Adding "pull to refresh" is an advantage.
+Adding "pull to refresh".
