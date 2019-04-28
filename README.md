@@ -1,6 +1,8 @@
 # DICacheMasterFramework
 Swift Image Cache Utility Library
 
+Here is the demo https://github.com/braxmarelax/Demo-DICacheMaster/tree/master
+
 This is a library is intended to to abstract the downloading (images, pdf, zip, etc) and caching of remote resources (images, JSON, XML, etc), as per the requirements.
 
 To install it on a project(or a framework), simply following steps :
@@ -55,4 +57,4 @@ These are standart carthage integration steps.</br>
 
 -> Implementing Test Classes
 <br><br><br><br>
-You can try the demo app to check some of the functionalities listed below.
+You can try the demo app to check some of the functionalities listed below. Here is the demo https://github.com/braxmarelax/Demo-DICacheMaster/tree/master
