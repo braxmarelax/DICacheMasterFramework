@@ -54,3 +54,5 @@ These are standart carthage integration steps.</br>
 -> Adding caching for other file type (XML,JSon,...) and download for (pdf, zip,...) files
 
 -> Implementing Test Classes
+<br><br><br><br>
+You can try the demo app to check some of the functionalities listed below.
